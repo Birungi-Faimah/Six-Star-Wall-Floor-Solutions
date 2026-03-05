@@ -140,36 +140,13 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-blue-light) 50%, #23486A 100%);
+    /* Background handled by video element */
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 120px 20px 80px;
     position: relative;
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(212, 168, 75, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(212, 168, 75, 0.08) 0%, transparent 70%);
-    animation: pulse 8s ease-in-out infinite;
 }
 
 @keyframes pulse {
